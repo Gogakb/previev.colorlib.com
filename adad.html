@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.css" />
+    <!-- Added owl theme CSS -->
+    <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+
+      .owl-carousel {
+        z-index: 99;
+        width: 100%;
+        display: flex;
+      }
+
+      .owl-item {
+        background-color: white;
+        width: 300px;
+        padding: 20px;
+      }
+
+      .owl-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .owl-dot {
+        background: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 5px;
+        width: 10px;
+        height: 10px;
+      }
+
+      .owl-carousel {
+        z-index: 99; /* Duplicate declaration */
+        width: 100%; /* Duplicate declaration */
+        display: flex; /* Duplicate declaration */
+      }
+
+      .owl-item {
+        background-color: white; /* Duplicate declaration */
+        width: 300px; /* Duplicate declaration */
+        padding: 20px; /* Duplicate declaration */
+        height: 300px; /* Duplicate declaration */
+        flex-direction: column; /* Missing parent declaration for flex container */
+        gap: 50px; /* Missing parent declaration for flex container */
+        display: flex; /* Duplicate declaration */
+      }
+
+      .owl-img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url(https://media1.thrillophilia.com/filestore/ur4lt5i6yjilg39oe4at5j1syxmx_IMG20of20-%202.webp);
+      }
+
+      .owl-content {
+        display: flex;
+        gap: 20px;
+      }
+
+      .owl-column {
+        padding: 0px; /* Missing unit for padding */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      p,
+      h2 {
+        padding: 0px; /* Missing unit for padding */
+        margin: 0px; /* Missing unit for margin */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="owl-carousel">
+      <div class="owl-item">
+        <p style="font-size: 18px; color: grey">
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <div class="owl-content">
+          <div class="owl-img"></div>
+          <div class="owl-column">
+            <h2 style="font-size: 24px; font-weight: bold; color: black">
+              Roger Scott
+            </h2>
+            <p style="color: grey">Marketing Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="owl-item">
+        <p style="font-size: 18px; color: grey">
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <div class="owl-content">
+          <div class="owl-img"></div>
+          <div class="owl-column">
+            <h2 style="font-size: 24px; font-weight: bold; color: black">
+              Roger Scott
+            </h2>
+            <p style="color: grey">Marketing Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="owl-item">
+        <p style="font-size: 18px; color: grey">
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <div class="owl-content">
+          <div class="owl-img"></div>
+          <div class="owl-column">
+            <h2 style="font-size: 24px; font-weight: bold; color: black">
+              Roger Scott
+            </h2>
+            <p style="color: grey">Marketing Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="owl-item">
+        <p style="font-size: 18px; color: grey">
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <div class="owl-content">
+          <div class="owl-img"></div>
+          <div class="owl-column">
+            <h2 style="font-size: 24px; font-weight: bold; color: black">
+              Roger Scott
+            </h2>
+            <p style="color: grey">Marketing Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./jquery.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+    </script>
+  </body>
+</html>

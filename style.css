@@ -69,25 +69,28 @@ nav a:hover {
   background-image: url(https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg);
   background-position: center;
   background-size: cover;
-  z-index: -1;
   background-repeat: no-repeat;
   width: 100%;
-  height: 92vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
 .h1-text {
   text-align: center;
+  font-size: 34px;
+  font-weight: lighter;
 }
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  flex-direction: column;
+  gap: 30px;
   cursor: pointer;
+  justify-self: center;
 }
 .x,
 .x1 {
@@ -103,6 +106,9 @@ nav a:hover {
   animation: circle 3s infinite ease-in-out;
   animation-delay: 3s;
 }
+.center .main-table {
+  align-self: center;
+}
 .main-table {
   background-color: rgb(56, 43, 43);
   color: grey;
@@ -112,9 +118,6 @@ nav a:hover {
   justify-content: space-around;
   align-items: center;
   padding-left: 10px;
-  position: absolute;
-  bottom: 0px;
-  z-index: 99;
 }
 .table-item {
   display: flex;
@@ -518,7 +521,6 @@ input:focus {
   display: none;
   background-color: #fff;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
-  margin-top: 0.25rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
@@ -553,6 +555,7 @@ table {
 .ui-datepicker-calendar tbody td a.ui-state-active {
   background-color: #009688;
   color: white;
+  position: absolute;
 }
 .ui-datepicker-header a.ui-corner-all {
   cursor: pointer;
@@ -597,4 +600,40 @@ table {
   color: #78909c;
   font-weight: 400;
   font-size: 0.75rem;
+}
+.owl-carousel {
+  width: 60%;
+  margin: auto;
+}
+.item {
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.459);
+  border: 1px solid rgba(175, 120, 120, 0.13);
+}
+.item .img {
+  width: 100px;
+  background-image: url(https://preview.colorlib.com/theme/vacation/images/person_1.jpg);
+  height: 100px;
+  background-size: cover;
+  border-radius: 50%;
+}
+.info-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.feedback-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.item h2 {
+  color: black;
+  margin-top: 15px;
 }
